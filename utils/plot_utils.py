@@ -1,13 +1,14 @@
-import matplotlib.pyplot as plt
-from sklearn.preprocessing import MinMaxScaler
+from utils import pd
+from utils import MinMaxScaler
+from utils import plt
+from utils import np
 
 
-def box_plots(df):
+def box_plots(df, metadata):
     """ displays boxplots for each column in the input dataframe 
 
         Args:
             df (pandas.DataFrame): input dataframe
-            
     """
 
     scaler = MinMaxScaler()
@@ -49,7 +50,7 @@ def box_plots(df):
     plt.show(block=False)
 
 
-def dist_plots(df):
+def plot_histograms(df):
     """ plots the histograms of the columns of the input dataframe
 
         Args:
