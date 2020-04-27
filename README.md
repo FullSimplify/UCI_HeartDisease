@@ -1,4 +1,4 @@
-# UCI_HeartDisease
+# XGBoost example
 UCI Heart Disease classification
 
 Work in progress
